@@ -19,4 +19,4 @@ else:
 if (result != None):
     print(str(num1) + " " + sign + " " + str(num2) + " = " + str(result))
 else:
-    print(result)
+    print("No result, Something wwent wrong!")
