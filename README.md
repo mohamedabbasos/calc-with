@@ -4,3 +4,4 @@ A simple calculator with some programming languages. i'll try to do it with all 
 # Done languages
 
 * Python
+* JavaScript
