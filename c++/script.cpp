@@ -1,43 +1,39 @@
-const readline = require('readline');
+#include <iostream>
+#include <conio.h>
+void main () 
+{
+	double num1, num2, res;
+    char opr;
 
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
-let num1, num2, sign, result;
-function clac(n1, s, n2) {
-    n1 = Number(n1);
-    n2 = Number(n2);
-    var res;
-    switch (sign) {
-        case '+':
-            res = n1 + n2;
-            break;
-        case '-':
-            res = n1  - n2;
-            break;
-        case '*':
-            res = n1  * n2;
-            break;
-        case '/':
-            res = n1  / n2;
-            break;
+    cout << "First Number :" << endl;
+    cin >> num1;
+
+	cout << "Oprator : allowed ( +, -, *, /)" << endl;
+    cin >> opr;
+
+    cout << "Second Number :" << endl;
+    cin >> num2;
+
+    if (opr != '+' && opr != '-' && opr != '*' && opr != '/') {
+        cout << "Allowed oprators are (+, -, *, /)";
+        getch();
+        return;
+    } else if (opr == '/' && num2 == 0) {
+        cout << "When oprator is /, Then Second number musn't be zero";
+        getch();
+        return;
+    } else if (opr == '+'){
+        res = num1 + num2;
+    } else if (opr == '-') {
+        res = num1 - num2;
+    } else if (opr == '*') {
+        res = num1 * num2;
+    } else if (opr == '/') {
+        res = num1 / num2;
     }
-    return res;
+
+    cout << "Your result is : \n";
+    cout << res;
+
+    getch();
 }
-rl.question('Please enter the first number? ', (answer) => {
-    num1 = answer;
-    rl.question("Please enter the sign?", (answer) => {
-        sign = answer;
-        rl.question("Please enter the second number", (answer) => {
-            num2 = answer;
-            rl.close();
-            if (sign === '/' && num2 == 0) {
-                console.log("When sign is / num2 must not be 0")
-            } else {
-                result = clac(num1, sign, num2);
-                console.log(`${num1} ${sign} ${num2} = ${result}`);
-            }
-        });
-    });
-});
