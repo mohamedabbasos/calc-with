@@ -3,7 +3,7 @@ A simple calculator with some programming languages. i'll try to do it with all 
 
 # Done languages
 
-* Python
-* JavaScript
-* C++
-* Ruby
+* [Python](https://github.com/mohamedabbasos/calc-with/tree/master/python)
+* [JavaScript](https://github.com/mohamedabbasos/calc-with/tree/master/javascript) (Nodejs)
+* [C++](https://github.com/mohamedabbasos/calc-with/tree/master/c++)
+* [Ruby](https://github.com/mohamedabbasos/calc-with/tree/master/ruby)
