@@ -7,3 +7,4 @@ A simple calculator with some programming languages. i'll try to do it with all 
 * [JavaScript](https://github.com/mohamedabbasos/calc-with/tree/master/javascript) (Nodejs)
 * [C++](https://github.com/mohamedabbasos/calc-with/tree/master/c++)
 * [Ruby](https://github.com/mohamedabbasos/calc-with/tree/master/ruby)
+* [Java](https://github.com/mohamedabbasos/calc-with/tree/master/java)
